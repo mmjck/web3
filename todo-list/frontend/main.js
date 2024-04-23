@@ -145,6 +145,25 @@ const getAllTasks = async () => {
         p3.innerHTML = "Please wait, geeting all the tasks from the smart contract"
         var tasks = await contractInstance.getAllTasks()
         console.log(tasks);
+
+
+        var table = document.getElementById("task-table");
+
+
+        for (let i = 0; i < tasks.length; i++) {
+          var row = table.insertRow();
+          var idCell = row.insertCell();
+          var descCell = row.insertCell();
+          var statusCell = row.insertCell();
+
+          const status = tasks[i].status == 0 ? "Pending" : "Finished";
+
+          idCell.innerHTML = i;
+          descCell.innerHTML = tasks[i].description;
+          statusCell.innerHTML = status;
+      }
+
+      p3.innerHTML = "The tasks are updated"
         
     }else {
       p3.innerHTML = "Please connect metamask fisrt"

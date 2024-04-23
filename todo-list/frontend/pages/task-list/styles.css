@@ -99,21 +99,21 @@ span {
     color: black;
 }
 
-#myTable {
+#task-table {
 border-collapse: collapse;
 width: 100%;
 max-width: 600px;
 margin: 0 auto;
 }
 
-#myTable th,
-#myTable td {
+#task-table th,
+#task-table td {
 border: 1px solid black;
 padding: 8px;
 text-align: center;
 }
 
-#myTable th {
+#task-table th {
 background-color: #f2f2f2;
 font-weight: bold;
 }
