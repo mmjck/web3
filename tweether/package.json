@@ -1,0 +1,28 @@
+{
+  "name": "tweether",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "next client",
+    "artifacts": "rm -rf ./client/web3/artifacts && cp -r ./build/contracts/ ./client/web3/artifacts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gravatar-url": "^4.0.1",
+    "next": "^14.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "truffle-contract": "^4.0.31",
+    "web3": "^4.10.0"
+  },
+  "devDependencies": {
+    "babel-plugin-inline-react-svg": "^2.0.2"
+  }
+}
