@@ -7,6 +7,8 @@
 Before we start coding, it's worth planning the structure of our DApp based on the features that we want. In Tweether, we want our contracts to be able to:
 
 
+
+
 #### Features
 - Register new users
 
@@ -19,6 +21,9 @@ Before we start coding, it's worth planning the structure of our DApp based on t
 To accomplish this, we're going to have 5 contracts:
 
 
+
+#### Architecture
+![Architecture](https://github.com/mmjck/web3/assets/55866244/92e4f4bf-f49a-4cdd-aeda-79b127b736cb)
 #### Requirements
 - NodeJs 
     v20.11.1
